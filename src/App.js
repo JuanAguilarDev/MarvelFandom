@@ -24,8 +24,8 @@ function App() {
 
   return (
     <div className="App">
-    // ApiCall data example
     {
+    // ApiCall data example
       reponse && console.log(reponse)
     }
       <NavigationBar />
