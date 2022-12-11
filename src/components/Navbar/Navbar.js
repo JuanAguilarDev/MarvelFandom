@@ -1,12 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+
 
 function NavigationBar() {
     return (
@@ -15,7 +11,7 @@ function NavigationBar() {
                 <Navbar.Brand href="/">
                     <img
                         src="https://see.fontimg.com/api/renderfont4/Dj83/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzAwMDAwMCJ9/TWFydmVsIEZBTkRPTQ/marvel-regular.png"
-                        width="120"
+                        width="180"
                         height="30"
                         className="d-inline-block align-top"
                         alt="Marvel Fandom logo"
