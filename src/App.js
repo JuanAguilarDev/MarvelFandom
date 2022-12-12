@@ -25,12 +25,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-    
+    <div className="App">    
     {
       // ApiCall data example
       response && console.log(response)
-    }
+    {
+    
       <NavigationBar />
       <Routes>
         <Route path='/' element={<Home />} />
