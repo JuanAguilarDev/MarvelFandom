@@ -1,0 +1,19 @@
+.hero--container{
+    margin: 0;
+    padding: 0;
+}
+
+.hero--title{
+    margin-top: 90px;
+    font-size: 85px;
+    font-weight: 900;
+    font-family: 'Marvel', sans-serif;
+    transform: rotate(30deg);
+}
+
+@media (max-width: 767px) {
+    .hero--title{
+        margin: 120px 0;
+        transform: rotate(0);
+    }
+}
