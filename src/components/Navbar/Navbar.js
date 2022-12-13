@@ -6,12 +6,12 @@ import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstr
 
 function NavigationBar() {
     return (
-        <Navbar fixed="top" bg="dark" variant={"dark"} expand="lg">
+        <Navbar className="mb-2" bg="dark" variant={"dark"} expand="lg">
             <Container fluid>
                 <Navbar.Brand href="/">
                     <img
-                        src="https://see.fontimg.com/api/renderfont4/Dj83/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzAwMDAwMCJ9/TWFydmVsIEZBTkRPTQ/marvel-regular.png"
-                        width="180"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+                        width="90"
                         height="30"
                         className="d-inline-block align-top"
                         alt="Marvel Fandom logo"
