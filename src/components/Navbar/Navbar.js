@@ -6,7 +6,7 @@ import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstr
 
 function NavigationBar() {
     return (
-        <Navbar fixed="top" bg="dark" variant={"dark"} expand="lg">
+        <Navbar bg="dark" variant={"dark"} expand="lg">
             <Container fluid>
                 <Navbar.Brand href="/">
                     <img
