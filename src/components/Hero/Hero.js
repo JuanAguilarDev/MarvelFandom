@@ -3,15 +3,7 @@ import { apiCall } from '../../helpers/apiCall';
 
 import './Hero.css';
 
-export const Hero = () => {
-    const [hero, setHero] = useState(null);
-
-    useEffect(() => {
-        apiCall({urlParam: 'characters/1016181'}).then(data => {
-            setHero(data.data);
-        });
-    }, []);
-
+export const Hero = ({hero}) => {
     return (
     
     <div style={{'backgroundColor': "#37AEB6"}}>

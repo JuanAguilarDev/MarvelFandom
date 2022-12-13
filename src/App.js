@@ -12,31 +12,26 @@ import { Hero } from './components/Hero/Hero';
 function App() {
 
   // ApiCall use example
-  const [response, setResponse] = useState(null);
+  const [hero, setHero] = useState(null);
 
   useEffect(() => {
-    const response = async () => {
-      await apiCall({urlParam: 'characters'}).then((data) => {
-        setResponse(data.data);
+    const hero = async () => {
+      await apiCall({urlParam: 'characters/1012295'}).then((data) => {
+        setHero(data.data);
       });
     }
 
-    response();
+    hero();
   }, []);
 
   return (
     <div className="App">    
-    {
-      // ApiCall data example
-      response && console.log(response)
-    }
-    
       <NavigationBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/test' element={<Test />} />
       </Routes>
-      <Hero></Hero>
+      <Hero hero={hero}></Hero>
       <Footer></Footer>
     </div>
   );

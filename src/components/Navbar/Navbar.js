@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
+// Styles
+import './Navbar.css';
 
 function NavigationBar() {
     return (
@@ -13,7 +15,7 @@ function NavigationBar() {
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
                         width="90"
                         height="30"
-                        className="d-inline-block align-top"
+                        className="navbar--image d-inline-block align-top"
                         alt="Marvel Fandom logo"
                     />
                 </Navbar.Brand>
