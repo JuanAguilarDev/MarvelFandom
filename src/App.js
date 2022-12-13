@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const hero = async () => {
-      await apiCall({urlParam: 'characters/1012295'}).then((data) => {
+      await apiCall({urlParam: 'characters/1014858'}).then((data) => {
         setHero(data.data);
       });
     }
