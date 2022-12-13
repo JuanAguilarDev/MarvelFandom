@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
@@ -6,7 +6,24 @@ import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstr
 // Styles
 import './Navbar.css';
 
-function NavigationBar() {
+function NavigationBar({setIdCharacter}) {
+
+    const [inputValue, setInputValue] = useState('');
+
+    const onInputChanged = ({target: {value}}) => {
+        console.log(value);
+        setInputValue(value)
+    }
+
+    const onSubmit = (event) =>{
+        event.preventDefault();
+        const newInputValue = inputValue.trim();
+        if(newInputValue.length <= 1) return;
+        setIdCharacter(newInputValue);
+        setInputValue('');
+    }
+
+
     return (
         <Navbar bg="dark" variant={"dark"} expand="lg">
             <Container fluid>
@@ -42,14 +59,15 @@ function NavigationBar() {
                             Link
                         </Nav.Link>
                     </Nav>
-                    <Form className="d-flex">
+                    <Form onSubmit={onSubmit} className="d-flex">
                         <Form.Control
+                            onChange={onInputChanged}
                             type="search"
                             placeholder="Search"
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-danger">Search</Button>
+                        <Button type="submit" variant="outline-danger">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>

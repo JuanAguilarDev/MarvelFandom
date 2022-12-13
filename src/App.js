@@ -13,20 +13,17 @@ function App() {
 
   // ApiCall use example
   const [hero, setHero] = useState(null);
+  const [idCharacter, setIdCharacter] = useState('');
 
   useEffect(() => {
-    const hero = async () => {
-      await apiCall({urlParam: 'characters/1014858'}).then((data) => {
+      apiCall({urlParam: `characters/${idCharacter}`}).then((data) => {
         setHero(data.data);
       });
-    }
-
-    hero();
-  }, []);
+  }, [idCharacter]);
 
   return (
     <div className="App">    
-      <NavigationBar />
+      <NavigationBar setIdCharacter={setIdCharacter}/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/test' element={<Test />} />
