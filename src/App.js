@@ -29,7 +29,7 @@ function App() {
     {
       // ApiCall data example
       response && console.log(response)
-    {
+    }
     
       <NavigationBar />
       <Routes>
