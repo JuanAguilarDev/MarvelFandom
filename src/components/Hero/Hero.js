@@ -20,6 +20,15 @@ export const Hero = ({ hero }) => {
                 </div>
             }
 
+            <div style={{ 'backgroundColor': "#FFFFFF" }}>
+                <h1 className='hero--series_title'>Series</h1>
+                    <p id='redimensionarSO' className='hero--series'>{hero.data.results[0].series.items[1].name}</p>
+                    <p className='hero--series'>{hero.data.results[0].series.items[2].name}</p>
+                    <p className='hero--series'>{hero.data.results[0].series.items[3].name}</p>
+                    <p className='hero--series'>{hero.data.results[0].series.items[4].name}</p>
+                    <p className='hero--series'>{hero.data.results[0].series.items[5].name}</p>
+            </div>
+
         </div>
 
     )

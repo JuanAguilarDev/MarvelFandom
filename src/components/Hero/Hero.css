@@ -16,6 +16,22 @@
     justify-content: space-evenly;
 }
 
+.hero--series_title{
+    padding: 3% 5%;
+    user-select: none;
+    font-family: 'Comic Neue', cursive;
+    text-align: left;
+}
+
+.hero--series{
+    padding: 0% 5%;
+    user-select: none;
+    font-size: 24px;
+    font-weight: 30;
+    font-family: 'Comic Neue', cursive;
+    text-align: left;
+}
+
 .hero--title{
     user-select: none;
     margin: 100px;
